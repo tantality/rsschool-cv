@@ -2,10 +2,13 @@
  font-family:  'Roboto', sans-serif;
 }
 
+
+
 .cv {
    margin: auto;
     width: 800px;
     border: 1px solid #87AAB1;
+    border-bottom: none;
     font-size: 18px;
     color:#284B52;
 }
@@ -99,3 +102,40 @@ p~p {
   margin-top:-10px;
 }
 
+.footer {
+  margin: auto;
+  border: 1px solid #87AAB1;
+  border-top: none;
+  display: flex;
+  width: 800px;
+  background: #EAF2F1;
+  padding: 20px 0px;
+}
+
+.github {
+  margin-left: 110px;
+  margin-right: 135px;
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 55px;
+}
+
+.revoke_indents {
+  margin:0px;
+}
+
+.year{
+  margin: 15px 0;
+  font-size: 20px;
+  color:#284B52;
+  font-weight: bold;
+}
+
+.course {
+  /* margin-right: 110px; */
+  margin-left: 135px;
+  /* border: 1px solid black; */
+  padding-top: 10px;
+  width: 90px;
+  height: 34px;
+}
