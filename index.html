@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 </head>
 <body>
     <main class="cv">
@@ -15,12 +16,12 @@
             <img src="img/my_photo.jpg" width="273" height="325"  alt="Angelina Tretyak">
         </div>
         <div class="name_contacts">
-            <div >
-                <p class="name">Angelina Tretyak</p>
-            </div>
+            <h1 class="name">Angelina Tretyak</h1>
             <address>
-                <p><b>Location:</b> Minsk, Belarus</p>
-                <p><b>E-mail:</b> angel.tretyak@mail.ru</p>
+                <ul>
+                   <li> <p><b>Location:</b> Minsk, Belarus</p></li>
+                   <li> <p><b>E-mail:</b> angel.tretyak@mail.ru</p></li>
+                </ul>
             </address>
         </div>
     </div>
@@ -33,18 +34,17 @@
              </section>
 
              <section class="langs">
-                <h2 class="header"> Languages</h2>
-                <p class="indent"><b>English.</b> The English tests show that I have a B1 level, but I don’t think 
-                    so. Most likely my level is either A1 or A2.</p>
+                <h2 class="header">Languages</h2>
+                <p class="indent"><b>English.</b> The English tests show that I have a B1 level;</p>
                 <p><b>Russian</b> - native.</p>
              </section>
             </div>
 
-            <div class="summary_skills">
+            <div class="summary_skills_code-example">
                 <section>
                     <h2 class="header"> Summary</h2>
                     <p class="indent"><b>My goals are:</b></p>
-                    <ul>
+                    <ul class="add_margins">
                         <li>to acquire the necessary knowledge to find a job;</li>
                         <li>to get a job as a web development specialist.</li>
                     </ul>
@@ -56,19 +56,41 @@
 
                 <section class="skills">
                     <h2 class="header">Skills</h2>
-                    <p class="indent"><b>Programming languages:</b>  C# (basic), PHP (basic);</p>
-                    <p>HTML5, CSS3;</p>
-                    <p>Markdown;</p>
-                    <p><b>CMS:</b>  made a term paper on WordPress;</p>
-                    <p><b>Database Management Systems:</b>  Microsoft SQL Server, made a term paper on MySQL;</p>
-                    <p><b> Worked with the following development tools:</b> </p>
                     <ul>
-                        <li>Figma, Adobe PhotoShop;</li>
-                        <li>OpenServer;</li>
-                        <li>phpMyAdmin;</li>
-                        <li>VS Code, Sublime Text 3;</li>
-                        <li>Visual Studio 2017.</li>
+                        <li><p class="indent"><b>Programming languages:</b>  C# (basic), PHP (basic);</p></li>
+                        <li><p>HTML5, CSS3;</p></li>
+                        <li><p>Markdown;</p></li>
+                        <li><p><b>CMS:</b>  made a term paper on WordPress;</p></li>
+                        <li><p><b>Database Management Systems:</b>  Microsoft SQL Server, made a term paper on MySQL;</p></li>
+                        <li><p><b> Worked with the following development tools:</b> </p></li>
+                        <li>
+                            <ul class="add_margins">
+                            <li>Figma, Adobe Photoshop;</li>
+                            <li>OpenServer;</li>
+                            <li>phpMyAdmin;</li>
+                            <li>VS Code, Sublime Text 3;</li>
+                            <li>Visual Studio 2017.</li>
+                            </ul>
+                        </li>
                     </ul>
+                </section>
+
+                <section class="code_example">
+                    <h2 class="header">Code example</h2>
+                    <div>
+                        <pre>
+                            <code class="html">function filterHomogenous(arrays) {
+let resArr=[];
+for (let arr of arrays) {
+    if(arr.length!=0 && (arr.every(a=>typeof(a)=='number') ||
+     arr.every(a=>typeof(a)=='string')))  
+     resArr.push(arr);
+}
+    return resArr;
+}
+</code>
+                    </pre>
+                    </div>
                 </section>
             </div>
        </div>
@@ -85,5 +107,7 @@
         <p class="revoke_indents"> <a href="https://rs.school/js/"><img src="img/rsschool.png" width="90" height="34"  alt="course_rsschool"></a></p> 
     </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

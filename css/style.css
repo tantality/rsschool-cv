@@ -2,8 +2,35 @@
  font-family:  'Roboto', sans-serif;
 }
 
+pre{
+  margin-top: -15px;
+  margin-bottom: -10px;
+  padding: 0;
+}
 
+h1{
+  font-weight:normal;
+}
 
+.add_margins{
+  margin-top: -10px;
+}
+
+ul.add_margins li{
+  margin-left: 40px;
+  margin-bottom: 5px;
+  list-style-type: disc; 
+}
+
+li {
+  list-style-type: none; 
+}
+
+ ul{
+  margin-left: 0; 
+  padding-left: 0; 
+ }
+ 
 .cv {
    margin: auto;
     width: 800px;
@@ -59,7 +86,7 @@ address {
 .education {
    padding-top: 28px;
    color:#fff ;
-   margin-bottom: 158px;
+   margin-bottom: 49px;
 }
 
 .header {
@@ -74,7 +101,7 @@ address {
 }
 
 
-.summary_skills {
+.summary_skills_code-example {
   box-sizing: border-box;
   padding: 28px 50px 35px 0;
   flex-basis: 0%;
@@ -85,17 +112,24 @@ address {
   margin-top:25px;
 }
 
-ul {
-  margin-top:-10px;
-}
 
 .alignment {
   text-align: justify;
   word-spacing:-2px;
 }
 
-.skills {
+.skills,.code_example {
   margin-top: 50px;
+}
+
+.skills li p{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.skills li p:last-child{
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 p~p {
@@ -115,7 +149,6 @@ p~p {
 .github {
   margin-left: 110px;
   margin-right: 135px;
-  /* border: 1px solid black; */
   width: 150px;
   height: 55px;
 }
@@ -123,6 +156,7 @@ p~p {
 .revoke_indents {
   margin:0px;
 }
+
 
 .year{
   margin: 15px 0;
@@ -132,9 +166,7 @@ p~p {
 }
 
 .course {
-  /* margin-right: 110px; */
   margin-left: 135px;
-  /* border: 1px solid black; */
   padding-top: 10px;
   width: 90px;
   height: 34px;
