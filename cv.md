@@ -33,5 +33,5 @@ I learn new information fairly quickly and successfully put it into practice. I 
 
 
 ## Languages
-- **English.** The English tests show that I have a B1 level, but I don't think so. Most likely my level is either A1 or A2;
+- **English.** The English tests show that I have a B1 level;;
 - **Russian** - native.
